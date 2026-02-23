@@ -135,7 +135,7 @@ Det skal være muligt at knytte en PC til en bestemt konfigurationsprofil via ko
 - Er PCen slukket skal konfigurationen automaisk rulles på, når PCen tændes
 
 # 4. Print og skanning
-Use case: En stor andel af BorgerPC brugerne kommer for at printe. Det er et meget benyttet tilbud på bibliotekerne.
+**Baggrund**: En stor andel af BorgerPC brugerne kommer for at printe. Det er et meget benyttet tilbud på bibliotekerne.
 Følgende skal kunne konfigureres:
 - Netværksprinter med/uden angivelse af PPD-fil
 - Princh Cloud Printer
@@ -143,10 +143,10 @@ Følgende skal kunne konfigureres:
 - Standard printerindstillinger
 
 # 5. Programmer
-Borgere har først og fremmest brug for en webbrowser, der fungerer med alle offentlige selvbetjeningsløsninger. Derudover er der brug for PDF læsning og evt. redigering i forhold til at udfylde formularer. Der er også brug for tekstbehandling.
+Borgere har først og fremmest brug for en webbrowser. Derudover er der brug for PDF læsning og evt. redigering i forhold til at udfylde formularer. Der er også brug for tekstbehandling.
 
 ## 5.1 Browsere
-BorgerPCerne er for nogle personer, deres primære adgang til digital selvbetjening og kontakt. Det er et alvorligt problem hvis vigtige hjemmesider ikke fungerer i løsningen - herunder formualarer, instruktionsvideoer og lign. Rigide principper om at udelukke proprietære formater og teknologier, må ikke prioriteres over brugbarheden. Løsningen skal fungere i en uperfekt verden, hvor kritisk vigtige hjemmesider kan være bundet op på proprietær teknologi. Hvis ideologi sættes over brugbarhed, bliver det samfundets svageste borgere, der betaler prisen. 
+BorgerPCerne er for nogle personer, deres primære adgang til digital selvbetjening og kontakt. Det er et alvorligt problem hvis vigtige hjemmesider ikke fungerer i løsningen - herunder formualarer, instruktionsvideoer og lign. Rigide principper om at udelukke proprietære formater og teknologier, må ikke prioriteres over brugbarhed. Løsningen skal fungere i en uperfekt verden, hvor kritisk vigtige hjemmesider kan være bundet op på proprietær teknologi. Hvis ideologi priorites over funktion, tager vi samfundets svageste borgere og frontpersonalet i kommunerne som gidsel i en 
 
 Det kan være en fordel at have to forskellige browsere, hvis der er en hjemmeside, der ikke virker i den ene, så kan man prøve med den anden. 
 
