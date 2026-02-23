@@ -11,6 +11,8 @@ has_children: false
 
 # UDKAST: Krav til OS2BorgerPC 3
 
+{:toc}
+
 #### Interessenter
 - Bruger: Borger der bruger en BorgerPC til digital selvbetjening, print mv.
 - Superbruger: Medarbejder i en kommune der installerer nye BorgerPCer, overvåger driftsstatus på BorgerPCer, definerer konfigurationsprofiler, løser mindre driftsproblemer
