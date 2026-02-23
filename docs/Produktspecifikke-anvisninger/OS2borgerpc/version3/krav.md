@@ -33,9 +33,9 @@ Behovet for hardware kompatibilitet for BorgerPCer går i to retninger:
 # 1. Privacy og datasikkerhed for brugeren af en BorgerPC
 **Baggrund**: Når brugere benytte Borgerpcer til digital selvbetjening indtaster de fortrolige oplysninger som CPR-nummre, brugernavne og adgangskoder og tilgår private data og dokumenter. Det er afgørende vigtigt at alle spor efter deres brugersession slettes automatisk fra computeren, når de forlader den, så private data ikke kompromitteres. 
 
-Ikke alle brugere er opmærksomme på at værne om egen datasikkerhed. De kan finde på at forlade en computer mens de stadig er logget ind i digitale platforme. 
+Ikke alle brugere er opmærksomme på at værne om egen datasikkerhed. De kan finde på at forlade en computer, mens de stadig er logget ind i digitale platforme. 
 
-Hacking er også et problemstilling der skal indtænkes. Der har været eksempler på hacking af pcer på biblioteker via USB key loggers. Det skal derfor indtænkes at der findes ondsindende persomer der leder efter sikkerhedshuller i systemet, som de kan udnytte til at ændre computerens virkemåde, så private data lagres og ikke slettes efter endt session.
+Hacking er også en problemstilling, der skal indtænkes. Der har været eksempler på hacking af pcer på biblioteker via USB key loggers. Det skal derfor indtænkes at der findes ondsindende persomer der leder efter sikkerhedshuller i systemet, som de kan udnytte til at ændre computerens virkemåde, så private data lagres og ikke slettes efter endt session.
 
 ## 1.1 PC der altid er sikkerhedsopdateret
 **Krav**: BorgerPCen skal automatisk hente og installere sikkerhedsopdateringer til operativsystem og applikationer
