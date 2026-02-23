@@ -17,7 +17,7 @@ has_children: false
 - Beslutningstager: Herfra kommer typisk krav om energisparefunktionalitet, genbrug af hardware, sikkerhedskrav mv.
 
 #### Miljø
-- BorgerPCer står i åbne offentlige rum uden personale tilstede.
+- BorgerPCer står i åbne offentlige rum hvor der ikke er personale til stede
 - Brugeren har sjældent adgang til hjælp i forhold til betjening af maskinen. 
 - Der er ingen teknisk personale tilstede på lokaliteten. Tekniske problemer der kræver fysisk adgang til maskinen kan være vanskelige at få løst.
 - BorgerPCerne står på stærkt sikrede netværk, hvor der kun er adgang til udadgående kommunikation på port 80 og 443. Det kan også være begrænset hvilke domæner, der kan kommunikeres med.
