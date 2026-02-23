@@ -26,7 +26,7 @@ has_children: false
 - BorgerPCerne kan i perioder være slukkede. Det skal systemet tage højde for i forhold til softwareopdateringer og andet.
 
 #### Hardware
-Behovet for hardware kompatibilitet for BorgerPCer går i to retninger:
+Behovet for hardwarekompatibilitet for BorgerPCer går i to retninger:
 - Nogle kommuner indkøber billige små computere til formålet. Det har historisk været Intel NUCs men på det seneste er Raspberry PIs blevet populære. Det kræver at både x86 og ARM arkitektur understøttes.
 - Andre kommuner prioriterer genbug af hardware. Typisk genbruges PCer fra administrationen som borgerPCer.
 
