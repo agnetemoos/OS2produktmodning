@@ -43,7 +43,7 @@ Hacking er også en problemstilling, der skal indtænkes. Der har været eksempl
 ## 1.2 Oprydningsfunktion ved ny bruger session
 **Krav**: Der skal være en automatisk oprydningsrutine der sletter alle brugerens data, når en bruger er færdig med computeren.
 - Oprydningsrutinen må ikke kunne manipuleres ved at tage strømmen til computeren eller på anden måde gribe ind i log ud og ind 
-- Oprydningsproceduren skal tage højde for at at spor af en brugersession også ligger uden for brugerens hjemmemappe som i /Var/cache og i 
+- Oprydningsproceduren skal tage højde for at at spor af en brugersession også ligger uden for brugerens hjemmemappe som i /tmp/, /var/tmp/ og/var/spool/cron/. Samt evt. personfølsomme oplysninger i system logs.
 - Det bør overvejes om det udgør en sikkerhedsrisiko at genbruge det samme brugerid i hver ny bruger session. 
 
 ## 1.3 Automatisk log ud hvis computeren forlades 
@@ -64,53 +64,44 @@ I flere kommuner har der været eksempler på hacking via USB keyloggere. USB-in
 
 ## 2.1 Computeren skal stå med tændt skærm 
 En tændt skærm viser brugeren at PCen er klar til brug. En sort skærm tolkes af brugere, som ikke i drift/i stykker. 
-Image standard: automatisk dvale ved inaktivitet skal deaktiveres.
-Konfig: Skal kunne konfigureres til at gå i automatisk dvale ved inaktivitat. Se under strømbesparende funktioner.
+**Krav**: Automatisk dvale ved inaktivitet skal deaktiveres.
+(relaterer til  krav 
 
 ## 2.2 Computeren skal være sat op til automatisk indlogning som borger-bruger
-Når starter og efter log out skal der automatisk logge ind i en ny borger-bruger-session.
+**Krav:** Når PCen tænder/efter log out skal der automatisk logges ind i en ny borger-bruger-session.
 Der skal ikke tastes passwords eller brugernavne for at komme ind i systemet.
-I image: Automatisk indlogning 
 
 ## 2.3 NumLock skal være aktiveret 
 Det forvirrer brugere og giver anledning til henvendelser, hvis det nummeriske tastatur ikke virker. 
-I image: Aktiver NumLock
+**Krav**: NumLock skal være aktiv
 
 ## 2.4 Fjerne menupunkter vedr. power off, sleep mode, lock og change user fra systemmenuen. 
-Brugere skal afslutte deres session ved at logge af - ikke ved power off eller sleep mode. Power off og visse sleep modes sætter pcen i en ubrugelig tilstand som kun kan afhælpes ved at personale skffer sig fysisk adgang til pcen og genstarter dem. Lock og change user er heller ikke relevante. Det kan brugere ikke forventes, at kunne regne ud.
-
-I image: Fjern menupunkter vedr. power off, sleep, lock og change user.
+Brugere skal afslutte deres session ved at logge af - ikke ved power off eller sleep mode. Power off og visse sleep modes sætter pcen i en ubrugelig tilstand, som kræver ar personale får fysisk adgang til pcen og genstarter dem. Lock og change user er heller ikke relevante. Det kan brugere ikke forventes, at kunne regne ud.
+**Krav**: Fjern menupunkter vedr. power off, sleep, lock og change user.
 
 ## 2.5. Menubjælke der synliggør tilgængelige applikationer
-Brugerens desktop skal have en menubjælke der er synlig altid. Den viser brugeren hvilke applikationer de har adgang til. Brugerne kan ikke finde ud af at fremsøge applikationer gennem søgefelter eller diskrete små menuknapper.
-
-Image: Synlig menubjælke med link til log ud
-Konfig: Der skal kunne tilføjes/fjernes applikationer til menubjælken
+**Krav**: Brugerens desktop skal have en menubjælke, der altid er synlig. Den viser brugeren hvilke applikationer de har adgang til. Brugerne kan ikke finde ud af at fremsøge applikationer gennem søgefelter eller diskrete små menuknapper. Det skal være konfigurerbart hvilke applikationer, der skal være genveje til fra menuen. Der bør altid ligger et genvejsikon til Log out.
 
 ## 2.6 Genveje på skrivebord
-Der skal kunne konfigureres genveje på skrivebordet i brugerens desktop. Det kan være genveje til filer, mapper, URLer og applikationer.
-Image: Skrivebordet er tomt
-Konfig: Genveje på skrivebordet kan konfigureres.
+**Krav**: Det skal være muligt at oprette genveje på skrivebordet i brugerens desktop. Det kan være genveje til filer, mapper, URLer og applikationer.
 
 ## 2.7 Synliggør tilgængelighedsfunktioner
-Image: Gør tilgængelighedsfuntioner synlige i GUI evt. som ikon i systemmenu
+**Krav**: Tilgængelighedsfuntioner (hjælp til handicappede) skal være synlige i GUI evt. som ikon i systemmenu
 
 ## 2.8 Skjul systembeskeder 
-Systembeskeder fra operativsystemet omkring opdateringer og lignende skal undertrykkes. De gør brugerne utrygge og forvirrede.
+**Krav**: Systembeskeder fra operativsystemet omkring opdateringer og lignende skal undertrykkes. De gør brugerne utrygge og forvirrede.
 
 # 3. Systemadministration af BorgerPCer ude i kommunerne
-Use case: Det er superbrugere i hver kommuner der installerer BorgerPC-systemet på computerne. Superbrugere definerer også lokale konfigurtionsprofiler så f. eks. wifi opsætning, print konfiguration og browser startside passer til de lokale forhold. De laver driftsovervågning og griber ind hvis maskiner går offline eller på anden måde fejler.
+**Babgrund**: Det er superbrugere i hver kommune, der installerer BorgerPC-systemet på computerne. Superbrugere definerer også lokale konfigurtionsprofiler så f. eks. wifi opsætning, print konfiguration og browser startside passer til de lokale forhold. De laver driftsovervågning, og griber ind hvis maskiner går offline eller på anden måde fejler.
 
 I større kommuner er ansvaret for BorgerPC-flåden delegeret til forskellige superbrugere. En gruppe superbrugere har f.eks. ansvaret for bibliotekernes PCer mens en anden servicerer jobcenter og borgerservice. Af den grund er der brug for opdeling af flåden under adskilte tenants. Af hensyn til IT-sikkerheden skal superbruger kun have rettigheder til at administrere de maskiner, der hører under den tenent, som de er tilknyttet. 
-
 
 ## 3.1 Installation af ny BorgerPC
 Installation af en ny BorgerPC skal være nem og hurtig.
 I forhold til en standard linux installationswizard bør flere trin kunne prækonfigureres, så de springes over.
 
-
 ## 3.2 System til fleet overview under adskilte tenants
-Superbrugere har brug for en grafisk brugergrænseflade der giber dem et overblik over status på de computere, som de har driftsansvar for. 
+Superbrugere har brug for en grafisk brugergrænseflade der giver dem et overblik over status på de computere, som de har driftsansvar for. 
 
 Pr. tenant skal der vises:
 - Oversigt over alle pcer i flåden
@@ -125,13 +116,15 @@ I detaljer for en PC skal vises:
 
 
 ## 3.3 System til mangement af konfigurationsprofiler under adskilte tenants
-Superbrugere skal, evt. med hjælp fra driftsleverandør, kunne opbygge konfigurationsprofiler for grupper af PCer under deres tenant. 
+**Bagggrund**: Superbrugere skal, evt. med hjælp fra driftsleverandør, kunne opbygge konfigurationsprofiler for grupper af PCer under deres tenant. 
 
 Eksempler på typisk konfiguration er wifi-opsætning, browserens startside, installation af printer og valg af standardprinter.
 
-Det kunne f. eks. være en konfigurationsprofil med navnet "Borgerservice" der sætter browserens startside til borger.dk, en bestemt Konica Minolta BizHub printer installeres og sættes som standradprinter og wifi disables.
+Eksempel 1:
+En konfigurationsprofil med navnet "Borgerservice Rådhusgade" der sætter browserens startside til borger.dk, en bestemt Konica Minolta BizHub printer installeres og sættes som standradprinter og wifi disables.
 
-En anden konfigurationsprofil kunne hedde "BiblioteksPC", hvor browserens startside sættes til bibliotekets hjemmeside, print opsættes til Princh printservice og wifi opsættes så PCen automatisk kobler på et bestemt SSID.
+Eksempel 2
+En konfigurationsprofil med navnet "Broager Bibliotek", hvor browserens startside sættes til bibliotekets hjemmeside, print opsættes til Princh printservice og wifi opsættes så PCen automatisk kobler på et bestemt SSID.
 
 ## 3.4 Tilknytning af PC til konfigurationsgruppe
 Det skal være muligt at knytte en PC til en bestemt konfigurationsprofil via konfigurationsgrupper. 
