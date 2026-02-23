@@ -35,7 +35,7 @@ Behovet for hardware kompatibilitet for BorgerPCer går i to retninger:
 
 Ikke alle brugere er opmærksomme på at værne om egen datasikkerhed. De kan finde på at forlade en computer, mens de stadig er logget ind i digitale platforme. 
 
-Hacking er også en problemstilling, der skal indtænkes. Der har været eksempler på hacking af pcer på biblioteker via USB key loggers. Det skal derfor indtænkes at der findes ondsindende persomer der leder efter sikkerhedshuller i systemet, som de kan udnytte til at ændre computerens virkemåde, så private data lagres og ikke slettes efter endt session.
+Hacking er også en problemstilling, der skal indtænkes. Der har været eksempler på hacking af pcer på biblioteker via USB key loggers. Systemet skal designes med henblik på, at der er ondsindende personer, der aktivt leder efter sikkerhedshuller, som de kan udnytte til at skaffe sig adgang til private data fra andre brugere.
 
 ## 1.1 PC der altid er sikkerhedsopdateret
 **Krav**: BorgerPCen skal automatisk hente og installere sikkerhedsopdateringer til operativsystem og applikationer
