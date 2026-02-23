@@ -13,7 +13,7 @@ has_children: false
 
 #### Interessenter
 - Bruger: Borger der bruger en BorgerPC til digital selvbetjening, print mv.
-- Superbruger: Medarbejder i en kommune der installerer nye BorgerPCer, overvåger driftsstatus på BorgerPCer, opretter konfigurationsprofiler, løser mindre driftsproblemer
+- Superbruger: Medarbejder i en kommune der installerer nye BorgerPCer, overvåger driftsstatus på BorgerPCer, definerer konfigurationsprofiler, løser mindre driftsproblemer
 - Beslutningstager: Herfra kommer typisk krav om energisparefunktionalitet, genbrug af hardware, sikkerhedskrav mv.
 
 #### Miljø
