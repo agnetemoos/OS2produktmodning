@@ -66,7 +66,8 @@ I flere kommuner har der været eksempler på hacking via USB-keyloggere. USB-in
 
 ### 2.1 Computeren skal stå med tændt skærm
 En tændt skærm viser brugeren, at PC'en er klar til brug. En sort skærm tolkes af brugere som, at den ikke er i drift eller i stykker.
-**Krav**: Automatisk dvale ved inaktivitet skal deaktiveres. (relaterer til krav)
+
+**Krav**: Automatisk dvale ved inaktivitet skal deaktiveres. (modsatrettet krav findes under de strømesparende funktioner - kommuner prioriterer ikke ens)
 
 ### 2.2 Computeren skal være sat op til automatisk indlogning som borger-bruger
 **Krav**: Når PC'en tænder/efter log out skal der automatisk logges ind i en ny borger-bruger-session. Der skal ikke tastes passwords eller brugernavne for at komme ind i systemet.
@@ -77,6 +78,7 @@ Det forvirrer brugere og giver anledning til henvendelser, hvis det nummeriske t
 
 ### 2.4 Fjerne menupunkter vedr. power off, sleep mode, lock og change user fra systemmenuen
 Brugere skal afslutte deres session ved at logge af – ikke ved power off eller sleep mode. Power off og visse sleep modes sætter PC'en i en ubrugelig tilstand, som kræver, at personale får fysisk adgang til PC'en og genstarter den. Lock og change user er heller ikke relevante. Det kan brugere ikke forventes at kunne regne ud.
+
 **Krav**: Fjern menupunkter vedr. power off, sleep, lock og change user.
 
 ### 2.5 Menubjælke, der synliggør tilgængelige applikationer
